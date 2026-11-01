@@ -23,7 +23,8 @@
         android:layout_centerVertical="true"
         android:backgroundTint="@color/select_btn_color"
         android:fontFamily="sans-serif-condensed"
-        android:text="Обрати"
+        android:onClick="deleteContact"
+        android:text="Видалити"
         android:textColor="@color/black" />
 
 </RelativeLayout>

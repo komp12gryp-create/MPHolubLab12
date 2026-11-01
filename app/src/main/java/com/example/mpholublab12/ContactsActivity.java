@@ -12,10 +12,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class ContactsActivity extends AppCompatActivity {
 
-    private String[] namesArr = new String[]{"Андрій", "Максим", "Олексій", "Дмитро", "Ілля"};
+    private ArrayList<String> namesArr = new ArrayList<>(Arrays.asList("Андрій", "Максим", "Олексій", "Дмитро", "Ілля"));
     private ListView listView;
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +33,16 @@ public class ContactsActivity extends AppCompatActivity {
         });
 
         listView = findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.name_item, R.id.user_name, namesArr);
+        adapter = new ArrayAdapter<>(this, R.layout.name_item, R.id.user_name, namesArr);
         listView.setAdapter(adapter);
+    }
+
+    public void deleteContact(View view) {
+        int position = listView.getPositionForView(view);
+        if (position >= 0) {
+            namesArr.remove(position);
+            adapter.notifyDataSetChanged();
+        }
     }
 
     public void goHome(View view) {
