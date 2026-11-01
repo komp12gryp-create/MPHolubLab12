@@ -5,20 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3F2FD"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="72dp"
-        android:background="#1565C0"
+        android:background="@color/header_color"
         android:fontFamily="serif"
         android:gravity="center_vertical"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:text="Лабораторна робота №12"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
         android:text="Контактна книга"
-        android:textColor="#0D47A1"
+        android:textColor="@color/title_color"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/menu"
@@ -53,10 +53,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#00897B"
+            android:backgroundTint="@color/btn_color"
             android:fontFamily="sans-serif-condensed"
             android:text="Меню"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/white" />
 
         <Button
             android:layout_width="0dp"
@@ -64,21 +64,21 @@
             android:layout_marginStart="6dp"
             android:layout_marginEnd="6dp"
             android:layout_weight="1"
-            android:backgroundTint="#00897B"
+            android:backgroundTint="@color/btn_color"
             android:fontFamily="sans-serif-condensed"
             android:onClick="goContacts"
             android:text="Друзі"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/white" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#00897B"
+            android:backgroundTint="@color/btn_color"
             android:fontFamily="sans-serif-condensed"
             android:onClick="exitApp"
             android:text="Вихід"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

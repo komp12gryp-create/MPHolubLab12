@@ -12,7 +12,7 @@
         android:layout_alignParentStart="true"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center_vertical"
-        android:textColor="#0D47A1"
+        android:textColor="@color/title_color"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -21,9 +21,9 @@
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:backgroundTint="#FFB300"
+        android:backgroundTint="@color/select_btn_color"
         android:fontFamily="sans-serif-condensed"
         android:text="Обрати"
-        android:textColor="#000000" />
+        android:textColor="@color/black" />
 
 </RelativeLayout>
