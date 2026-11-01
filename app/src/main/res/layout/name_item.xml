@@ -24,7 +24,7 @@
         android:backgroundTint="@color/select_btn_color"
         android:fontFamily="sans-serif-condensed"
         android:onClick="deleteContact"
-        android:text="Видалити"
+        android:text="@string/delete"
         android:textColor="@color/black" />
 
 </RelativeLayout>

@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 public class ContactsActivity extends AppCompatActivity {
 
-    private ArrayList<String> namesArr = new ArrayList<>(Arrays.asList("Андрій", "Максим", "Олексій", "Дмитро", "Ілля"));
+    private ArrayList<String> namesArr;
     private ListView listView;
     private ArrayAdapter<String> adapter;
 
@@ -32,6 +32,7 @@ public class ContactsActivity extends AppCompatActivity {
             return insets;
         });
 
+        namesArr = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.contact_names)));
         listView = findViewById(R.id.listView);
         adapter = new ArrayAdapter<>(this, R.layout.name_item, R.id.user_name, namesArr);
         listView.setAdapter(adapter);

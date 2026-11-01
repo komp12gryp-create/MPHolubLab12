@@ -17,7 +17,7 @@
         android:gravity="center_vertical"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="Лабораторна робота №12"
+        android:text="@string/lab_title"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -32,7 +32,7 @@
         android:fontFamily="sans-serif-condensed"
         android:gravity="center_vertical"
         android:paddingStart="16dp"
-        android:text="Мої друзі"
+        android:text="@string/my_friends"
         android:textColor="@color/title_color"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -68,7 +68,7 @@
             android:backgroundTint="@color/btn_color"
             android:fontFamily="sans-serif-condensed"
             android:onClick="goHome"
-            android:text="Меню"
+            android:text="@string/menu"
             android:textColor="@color/white" />
 
         <Button
@@ -79,7 +79,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/btn_color"
             android:fontFamily="sans-serif-condensed"
-            android:text="Друзі"
+            android:text="@string/friends"
             android:textColor="@color/white" />
 
         <Button
@@ -89,7 +89,7 @@
             android:backgroundTint="@color/btn_color"
             android:fontFamily="sans-serif-condensed"
             android:onClick="exitApp"
-            android:text="Вихід"
+            android:text="@string/exit"
             android:textColor="@color/white" />
     </LinearLayout>
 

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MPHolubLab12</string>
+    <string name="lab_title">Лабораторна робота №12</string>
+    <string name="contact_book">Контактна книга</string>
+    <string name="menu">Меню</string>
+    <string name="friends">Друзі</string>
+    <string name="exit">Вихід</string>
+    <string name="my_friends">Мої друзі</string>
+    <string name="delete">Видалити</string>
+
+    <string-array name="contact_names">
+        <item>Андрій</item>
+        <item>Максим</item>
+        <item>Олексій</item>
+        <item>Дмитро</item>
+        <item>Ілля</item>
+    </string-array>
 </resources>
